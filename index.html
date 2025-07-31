@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Varun Reddy G - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo"><a href="https://github.com/Sissoko20" target="_blank">https://github.com/Sissoko20</a></div>
+  <ul class="nav-links">
+    <li><button type="button" onclick="showSection('skills')" data-i18n="nav-skills">Competences</button></li>
+    <li><button type="button" onclick="showSection('experience')" data-i18n="nav-experience">Experiences</button></li>
+    <li><button type="button" onclick="showSection('contact')" data-i18n="nav-contact">Contact</button></li>
+    <li>
+      <button type="button" onclick="toggleLanguage()" id="lang-toggle">🇬🇧 EN</button>
+    </li>
+  </ul>
+
+  <div class="stats">
+    <div><span>23+</span><br /><span data-i18n="stat1">Projects from Scratch</span></div>
+    <div><span>6+</span><br /><span data-i18n="stat2">Years of Experience</span></div>
+    <div><span>96%</span><br /><span data-i18n="stat3">Positive Feedback</span></div>
+    <div><span>8</span><br /><span data-i18n="stat4">People Team Lead</span></div>
+  </div>
+</header>
+
+<!-- Intro toujours visible -->
+<section class="intro slide-in">
+  <div class="intro-text">
+    <h1><span data-i18n="intro-hello">Hey, Je m'appelle</span> <span class="highlight">Sissoko Modibo</span></h1>
+    <h2 data-i18n="intro-role">Un developpeur mobile ayant pour objectif de rendre optimale les solutions digitales</h2>
+    <p class="code-line">💻 <span data-i18n="intro-dev">i develop tools for dashboards</span></p>
+    <div class="cta-buttons">
+      <button class="btn yellow" data-i18n="intro-hire">Hire Me</button>
+ <a href="CV_Modibo_Sissoko_Licence_Développeur React.pdf" download class="btn-link" data-i18n="intro-resume">
+  Download Resume
+</a>
+
+    </div>
+  </div>
+  <div class="intro-image">
+    <img src="https://via.placeholder.com/400x500" alt="Sissoko Modibo" />
+  </div>
+</section>
+
+
+  <!-- Contenu dynamique -->
+  <main class="main-container">
+ <!-- Section SKILLS -->
+<section id="skills" class="content-section slide-in active-section">
+  <h2 data-i18n="skills-title">💡 My Skills</h2>
+  <ul class="skills-list">
+    <li data-i18n="skill1">HTML + CSS + JS</li>
+    <li data-i18n="skill2">React, Vue, Svelte</li>
+    <li data-i18n="skill3">Node.js, Express, MongoDB</li>
+    <li data-i18n="skill4">Figma, Git, TailwindCSS</li>
+  </ul>
+</section>
+
+<!-- Section EXPERIENCE -->
+<section id="experience" class="content-section slide-in">
+  <h2 data-i18n="experience-title">🧠 Experience</h2>
+  <div class="timeline-container">
+    <div class="timeline-item">LeapThought <span>Nov 2015</span></div>
+    <div class="timeline-item">Sabentaro <span>Aug 2015</span></div>
+    <div class="timeline-item">Zenoti <span>Sep 2018</span></div>
+    <div class="timeline-item">Aretear <span>Dec 2019 - Present</span></div>
+  </div>
+</section>
+
+<!-- Section CONTACT -->
+<section id="contact" class="content-section slide-in">
+  <h2 data-i18n="contact-title">📬 Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" data-i18n="name-placeholder" placeholder="Your name" required />
+    <input type="email" data-i18n="email-placeholder" placeholder="Your email" required />
+    <textarea data-i18n="message-placeholder" placeholder="Your message" rows="5" required></textarea>
+    <button type="submit" data-i18n="send-button">Send</button>
+  </form>
+</section>
+
+  </main>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
