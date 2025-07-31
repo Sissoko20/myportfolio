@@ -306,3 +306,31 @@ body {
     font-size: 1.5rem;
   }
 }
+
+.footer {
+  background: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.footer-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--yellow);
+}

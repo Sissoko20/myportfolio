@@ -44,6 +44,7 @@
     "intro-dev": "i develop tools for dashboards",
     "intro-hire": "Hire Me",
     "intro-resume": "Download Resume",
+    "footer-rights": "© 2025 Modibo Sissoko. All rights reserved.",
     },
     fr: {
       'skills-title': '💡 Mes Compétences',
@@ -69,6 +70,7 @@
     "intro-dev": "je développe des outils pour des tableaux de bord",
     "intro-hire": "Embauchez-moi",
     "intro-resume": "Télécharger le CV",
+    "footer-rights": "© 2025 Modibo Sissoko. Tous droits réservés.",
     }
   };
 
