@@ -12,7 +12,7 @@
 <header class="navbar">
   <div class="logo"><a href="https://github.com/Sissoko20" target="_blank"></a></div>
   <ul class="nav-links">
-    <li><button type="button" onclick="showSection('skills')" data-i18n="nav-skills">Competences</button></li>
+    <li><button type="button" onclick="showSection('skills')" data-i18n="nav-skills">Skills</button></li>
     <li><button type="button" onclick="showSection('experience')" data-i18n="nav-experience">Experiences</button></li>
     <li><button type="button" onclick="showSection('contact')" data-i18n="nav-contact">Contact</button></li>
     <li>
@@ -62,15 +62,87 @@
 </section>
 
 <!-- Section EXPERIENCE -->
-<section id="experience" class="content-section slide-in">
-  <h2 data-i18n="experience-title">🧠 Experience</h2>
-  <div class="timeline-container">
-    <div class="timeline-item">LeapThought <span>Nov 2015</span></div>
-    <div class="timeline-item">Sabentaro <span>Aug 2015</span></div>
-    <div class="timeline-item">Zenoti <span>Sep 2018</span></div>
-    <div class="timeline-item">Aretear <span>Dec 2019 - Present</span></div>
+<section id="experience" class="content-section slide-in py-16 bg-gray-50 stats">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-16 h2title" data-i18n="experience-title">🧠 Expériences</h2>
+
+  <div class="timeline-container max-w-6xl mx-auto space-y-8 px-4 sm:px-6 lg:px-8 cards">
+
+    <!-- Experience Item Template -->
+    <div class="relative group bg-white rounded-xl shadow-lg p-6 hover:bg-gray-100 transition-all duration-300 card red">
+      <h3 class="text-xl font-semibold text-gray-800 flex justify-between items-center">
+    
+        <a href="https://omdb-ab5db.web.app/" target="_blank" class="text-blue-600 underline hover:text-blue-800 text-sm font-normal">
+          <span>     OMDB
+        </span>
+        </a>
+      </h3>
+      <p class="mt-2 text-sm text-gray-600 tip">Application de recherche de films Marvel avec affichage dynamique des résultats via l’API OMDb.</p>
+    </div>
+
+    <div class="relative group bg-white rounded-xl shadow-lg p-6 hover:bg-gray-100 transition-all duration-300 card red">
+      <h3 class="text-xl font-semibold text-gray-800 flex justify-between items-center">
+    
+        <a href="https://sissoko20-learning-app-lzqwqb.streamlit.app/" target="_blank" class="text-blue-600 underline hover:text-blue-800 text-sm font-normal">
+       <span>     MyAna </span>
+        </a>
+      </h3>
+      <p class="mt-2 text-sm text-gray-600 tip">Dashboard interactif basé sur vos données pour obtenir des analyses et visualisations instantanées.</p>
+    </div>
+
+    <div class="relative group bg-white rounded-xl shadow-lg p-6 hover:bg-gray-100 transition-all duration-300 card red">
+      <h3 class="text-xl font-semibold text-gray-800 flex justify-between items-center">
+      
+        <a href="https://myconverter.streamlit.app/" target="_blank" class="text-blue-600 underline hover:text-blue-800 text-sm font-normal">
+        <span>  MyConverter</span>
+        </a>
+      </h3>
+      <p class="mt-2 text-sm text-gray-600 tip">Application simple pour convertir des vidéos (mp4, avi, mkv…) en fichiers audio mp3, via interface Streamlit.</p>
+    </div>
+
+    <div class="relative group bg-white rounded-xl shadow-lg p-6 hover:bg-gray-100 transition-all duration-300 card red">
+      <h3 class="text-xl font-semibold text-gray-800 flex justify-between items-center">
+    
+        <a href="https://mycontactmanager.streamlit.app/" target="_blank" class="text-blue-600 underline hover:text-blue-800 text-sm font-normal">
+       <span> MyContactManager </span> 
+        </a>
+      </h3>
+      <p class="mt-2 text-sm text-gray-600 tip">Outil de gestion de contacts performant (25.000+ fiches) avec recherche, tri, et interface optimisée.</p>
+    </div>
+
+    <div class="relative group bg-white rounded-xl shadow-lg p-6 hover:bg-gray-100 transition-all duration-300 card red">
+      <h3 class="text-xl font-semibold text-gray-800 flex justify-between items-center">
+      
+        <a href="https://factureapp-cd783.firebaseapp.com/login" target="_blank" class="text-blue-600 underline hover:text-blue-800 text-sm font-normal">
+         <span>  IkaFacture</span>
+        </a>
+      </h3>
+      <p class="mt-2 text-sm text-gray-600 tip">Plateforme de paiement digital (eau, électricité, TV) avec authentification Firebase, historique & PDF.</p>
+    </div>
+
+    <div class="relative group bg-white rounded-xl shadow-lg p-6 hover:bg-gray-100 transition-all duration-300 card red">
+      <h3 class="text-xl font-semibold text-gray-800 flex justify-between items-center">
+      
+        <a href="https://ninadelice-6f4b1.web.app/" target="_blank" class="text-blue-600 underline hover:text-blue-800 text-sm font-normal">
+         <span> NinaDélice </span>
+        </a>
+      </h3>
+      <p class="mt-2 text-sm text-gray-600 tip">Service de livraison de repas avec Google/Apple login, commande, visualisation par catégorie et gestion dynamique.</p>
+    </div>
+
+    <div class="relative group bg-white rounded-xl shadow-lg p-6 hover:bg-gray-100 transition-all duration-300 card red">
+      <h3 class="text-xl font-semibold text-gray-800 flex justify-between items-center">
+    
+        <a href="https://ninadelice-6f4b1.web.app/" target="_blank" class="text-blue-600 underline hover:text-blue-800 text-sm font-normal">
+          <span>  ChatApp </span> 
+        </a>
+      </h3>
+      <p class="mt-2 text-sm text-gray-600 tip">Application de messagerie d’entreprise avec articles, pièces jointes, groupes et notifications Firebase en temps réel.</p>
+    </div>
+
   </div>
 </section>
+
+
 
 <!-- Section CONTACT -->
 <section id="contact" class="content-section slide-in">
@@ -92,13 +164,13 @@
   <p class="copyright" data-i18n="footer-rights">© 2025 Modibo Sissoko. Tous droits réservés.</p>
   <ul class="footer-links">
     <li>
-      <a href="mailto:modibo.sissoko.dev@gmail.com" target="_blank">📧 modibo.sissoko.dev@gmail.com</a>
+      <a href="mailto:m.sissoko.7035@gmail.com" target="_blank">📧 m.sissoko.7035@gmail.com</a>
     </li>
     <li>
       <a href="https://github.com/Sissoko20" target="_blank">💻 GitHub</a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/modibo-sissoko" target="_blank">🔗 LinkedIn</a>
+      <a href="www.linkedin.com/in/modibo-s-5621a01b6" target="_blank">🔗 LinkedIn</a>
     </li>
     <li>
       <span>📞 +223 70 35 24 50</span>
