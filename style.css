@@ -451,3 +451,118 @@ body {
   display: inline-block;
   border-right: 2px solid #ccc;
 }
+
+/* --- Global Reset --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* --- Main container --- */
+.main-container {
+  width: 100%;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Responsive nav --- */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .intro-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn,
+  .cta-buttons .btn-link {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* --- Section spacing --- */
+.content-section {
+  padding: 3rem 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
+}
+
+.skills-list li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* --- Footer --- */
+.footer {
+
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -123,3 +123,25 @@
   });
 
 
+function showSection(id) {
+  // Masquer toutes les sections
+  document.querySelectorAll('.content-section').forEach(section => {
+    section.classList.remove('active-section');
+  });
+
+  // Trouver la section ciblée
+  const section = document.getElementById(id);
+
+  if (section) {
+    // Ajouter la classe active pour l'afficher
+    section.classList.add('active-section');
+
+    // Scroller vers la section
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  } else {
+    console.warn("Section non trouvée :", id);
+  }
+}
