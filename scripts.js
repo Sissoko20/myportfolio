@@ -90,3 +90,36 @@
 
 
 
+  function typeEffect(element, text, delay = 30, random = true, callback) {
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+        const variation = random ? Math.floor(Math.random() * 80) : 0;
+        setTimeout(type, delay + variation);
+      } else if (callback) {
+        callback();
+      }
+    }
+    element.textContent = '';
+    type();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".typewriter");
+    let index = 0;
+
+    function animateNext() {
+      if (index < elements.length) {
+        const el = elements[index];
+        const fullText = el.getAttribute("data-i18n") ? el.textContent : el.textContent;
+        typeEffect(el, fullText, 35, true, animateNext);
+        index++;
+      }
+    }
+
+    animateNext(); // Démarre la boucle
+  });
+
+
